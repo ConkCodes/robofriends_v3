@@ -1,5 +1,6 @@
 import './App.css';
 import React from 'react';
+import Search from '../Components/Search.js';
 import CardList from "../Components/CardList.js";
 
 class App extends React.Component {
@@ -11,11 +12,18 @@ class App extends React.Component {
 
     }
 
+    onInput = (event) => {
+
+        this.setState({input: event.target.value});
+
+    }
+
     render() {
 
         return(
 
-            <div className="app">   
+            <div className="app"> 
+                <Search onInput={this.onInput}/>
                 <CardList/>
             </div>
 
