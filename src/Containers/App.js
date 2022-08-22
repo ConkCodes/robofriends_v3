@@ -1,15 +1,24 @@
 import './App.css';
 import React from 'react';
-import Card from "../Components/Card.js"
+import CardList from "../Components/CardList.js";
 
 class App extends React.Component {
+
+    constructor() {
+
+        super();
+        this.state = {input: ""};
+
+    }
 
     render() {
 
         return(
-            <div>
 
+            <div className="app">   
+                <CardList/>
             </div>
+
         );
 
     }

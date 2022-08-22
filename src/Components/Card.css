@@ -1,0 +1,15 @@
+.card {
+    border: 2px solid #ACB0BD;
+    border-radius: 3px;
+    margin: 10px;
+    background: #416165;
+    text-align: center;
+}
+
+.name {
+    margin-bottom: 0;
+}
+
+.email {
+    margin-top: 0.5em;
+}
