@@ -5,7 +5,11 @@ import {robots} from '../robots.js';
 
 const CardList = (props) => {
 
-    const cardList = robots.map(robot => {
+    const filteredRobots = robots.filter(robot => {
+        return robot.name.includes(props.input);
+    });
+
+    const cardList = filteredRobots.map(robot => {
         return (
             <Card 
                 name={robot.name}
@@ -13,7 +17,6 @@ const CardList = (props) => {
             />
         );
     });
-    
 
     return(
         <div className="cardList">
