@@ -24,7 +24,7 @@ class App extends React.Component {
 
             <div className="app"> 
                 <Search onInput={this.onInput}/>
-                <CardList/>
+                <CardList input={this.state.input}/>
             </div>
 
         );

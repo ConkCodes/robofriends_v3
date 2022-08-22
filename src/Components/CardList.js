@@ -1,11 +1,19 @@
 import './CardList.css';
 import React from 'react';
 import Card from './Card.js';
+import {robots} from '../robots.js';
 
-const CardList = () => {
+const CardList = (props) => {
 
-    let cardList = [];
-    for (let i = 0; i < 15; i++) cardList.push(<Card/>);
+    const cardList = robots.map(robot => {
+        return (
+            <Card 
+                name={robot.name}
+                email={robot.email}
+            />
+        );
+    });
+    
 
     return(
         <div className="cardList">
