@@ -6,12 +6,14 @@ import {robots} from '../robots.js';
 const CardList = (props) => {
 
     const filteredRobots = robots.filter(robot => {
-        return robot.name.includes(props.input);
+        return robot.name.toLowerCase().includes(props.input.toLowerCase());
     });
 
     const cardList = filteredRobots.map(robot => {
         return (
             <Card 
+                key={robot.id}
+                id={robot.id}
                 name={robot.name}
                 email={robot.email}
             />

@@ -6,7 +6,7 @@ const Card = (props) => {
     return(
         <div className="card">
             <img  
-                src="https://robohash.org/test" 
+                src={"https://robohash.org/" + props.id}
                 alt="" 
                 width="250" 
                 height="250"

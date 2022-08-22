@@ -2,8 +2,16 @@
     border: 2px solid #ACB0BD;
     border-radius: 3px;
     margin: 10px;
+    padding: 5px;
     background: #416165;
     text-align: center;
+    transition: all 1s;
+    box-shadow: 5px 5px 5px black;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .name {
