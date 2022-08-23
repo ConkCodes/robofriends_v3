@@ -1,3 +1,13 @@
 .search {
     text-align: center;
 }
+
+.input { 
+    border: 2px solid #ACB0BD;
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px black;
+    padding: 5px;
+    margin-bottom: 0.5em;
+    font-family: "Robtronika";
+    letter-spacing: 3px;
+}

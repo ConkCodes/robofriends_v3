@@ -2,4 +2,24 @@
     background: #0B3948;
     text-align: center;
     color: #D9DBF1;
+    height: 100%;
+}
+
+.title {
+    margin-top: 0;
+    padding-top: 0.75em;
+    margin-bottom: 0.5em;
+    font-size: 4em;
+    letter-spacing: 2px;
+    font-family: "Robot Invaders";
+}
+
+@font-face {
+    font-family: "Robot Invaders";
+    src: local("RobotInvaders"), url("../Fonts/RobotInvaders.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Robtronika";
+    src: local("Robtronika"), url("../Fonts/Robtronika.ttf") format("truetype");
 }

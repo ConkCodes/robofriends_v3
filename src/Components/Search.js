@@ -6,7 +6,7 @@ const Search = (props) => {
     return(
 
         <div className="search">
-            <input onChange={props.onInput} type="text"/>
+            <input className="input" onChange={props.onInput} type="text" placeholder="Search Robots"/>
         </div>
 
     );

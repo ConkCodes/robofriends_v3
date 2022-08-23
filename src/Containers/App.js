@@ -12,13 +12,12 @@ class App extends React.Component {
 
     onInput = (event) => {
         this.setState({input: event.target.value});
-        console.log(event.target.value);
     }
 
     render() {
         return(
             <div className="app">
-                <h1>RoboFriends</h1>
+                <h1 className="title">RoboFriends</h1>
                 <Search onInput={this.onInput}/>
                 <CardList input={this.state.input}/>
             </div>
