@@ -2,7 +2,6 @@ import './Card.css';
 import React from 'react';
 
 const Card = (props) => {
-
     return(
         <div className="card">
             <img  
@@ -19,7 +18,6 @@ const Card = (props) => {
             </p>
         </div>
     );
-
 }
 
 export default Card;

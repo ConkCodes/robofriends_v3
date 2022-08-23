@@ -2,12 +2,16 @@ import './App.css';
 import React from 'react';
 import Search from '../Components/Search.js';
 import CardList from "../Components/CardList.js";
+import {robots} from '../robots.js';
 
 class App extends React.Component {
 
     constructor() {
         super();
-        this.state = {input: ""};
+        this.state = {
+            robots: robots,
+            input: ""
+        };
     }
 
     onInput = (event) => {
@@ -15,11 +19,14 @@ class App extends React.Component {
     }
 
     render() {
+        const filteredRobots = this.state.robots.filter(robot => {
+            return robot.name.toLowerCase().includes(this.state.input.toLowerCase());
+        });
         return(
             <div className="app">
                 <h1 className="title">RoboFriends</h1>
                 <Search onInput={this.onInput}/>
-                <CardList input={this.state.input}/>
+                <CardList robots={filteredRobots}/>
             </div>
         );
     }
