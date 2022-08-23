@@ -27,13 +27,20 @@ class App extends React.Component {
         const filteredRobots = this.state.robots.filter(robot => {
             return robot.name.toLowerCase().includes(this.state.input.toLowerCase());
         });
-        return(
-            <div className="app">
-                <h1 className="title">RoboFriends</h1>
-                <Search onInput={this.onInput}/>
-                <CardList robots={filteredRobots}/>
-            </div>
-        );
+        if (this.state.robots.length === 0) {
+            return (
+                <h1 className="title">Loading...</h1>
+            );
+        }
+        else {
+            return(
+                <div>
+                    <h1 className="title">RoboFriends</h1>
+                    <Search onInput={this.onInput}/>
+                    <CardList robots={filteredRobots}/>
+                </div>
+            );
+        }
     }
 
 }
