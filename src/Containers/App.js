@@ -2,16 +2,21 @@ import './App.css';
 import React from 'react';
 import Search from '../Components/Search.js';
 import CardList from "../Components/CardList.js";
-import {robots} from '../robots.js';
 
 class App extends React.Component {
 
     constructor() {
         super();
         this.state = {
-            robots: robots,
+            robots: [],
             input: ""
         };
+    }
+
+    async componentDidMount() {
+        const res = await fetch("https://jsonplaceholder.typicode.com/users");
+        const robots = await res.json();
+        this.setState({robots: robots});
     }
 
     onInput = (event) => {
