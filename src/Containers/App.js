@@ -1,7 +1,8 @@
 import './App.css';
 import React from 'react';
-import Search from '../Components/Search.js';
-import CardList from "../Components/CardList.js";
+import Search from '../components/Search.js';
+import ErrorBoundary from '../components/ErrorBoundary.js';
+import CardList from "../components/CardList.js";
 
 class App extends React.Component {
 
@@ -37,7 +38,9 @@ class App extends React.Component {
                 <div>
                     <h1 className="title">RoboFriends</h1>
                     <Search onInput={this.onInput}/>
-                    <CardList robots={filteredRobots}/>
+                    <ErrorBoundary>
+                        <CardList robots={filteredRobots}/>
+                    </ErrorBoundary>
                 </div>
             );
         }

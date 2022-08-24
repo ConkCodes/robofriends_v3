@@ -9,10 +9,10 @@
 
 @font-face {
     font-family: "Robot Invaders";
-    src: local("RobotInvaders"), url("../Fonts/RobotInvaders.ttf") format("truetype");
+    src: local("RobotInvaders"), url("../fonts/RobotInvaders.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Robtronika";
-    src: local("Robtronika"), url("../Fonts/Robtronika.ttf") format("truetype");
+    src: local("Robtronika"), url("../fonts/Robtronika.ttf") format("truetype");
 }
