@@ -1,6 +1,14 @@
 # Robofriends Functions
 
+Fetches json placeholder users from https://jsonplaceholder.typicode.com/users and displays their information and a randomly generated robot hash picture from https://robohash.org/
 
+Allows website viewer to search robots by their name
+
+Responsive using CSS grid and sticky search bar when website viewer scrolls
+
+Has "Loading..." message when robots have not been fethced yet, then when robots state is updated and the app is re-rendered "Loading..." message disappears
+
+Has error catching and handling for any errors that may occur when displaying robots
 
 # Getting Started with Create React App
 
