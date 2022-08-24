@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/robofriends_v3/static/css/main.dae54194.css",
+    "main.js": "/robofriends_v3/static/js/main.0b53b644.js",
+    "static/js/787.c71fb8e8.chunk.js": "/robofriends_v3/static/js/787.c71fb8e8.chunk.js",
+    "static/media/Robtronika.ttf": "/robofriends_v3/static/media/Robtronika.3a5bff6562eea11669e5.ttf",
+    "static/media/RobotInvaders.ttf": "/robofriends_v3/static/media/RobotInvaders.c6203c640dca39e33caa.ttf",
+    "index.html": "/robofriends_v3/index.html",
+    "main.dae54194.css.map": "/robofriends_v3/static/css/main.dae54194.css.map",
+    "main.0b53b644.js.map": "/robofriends_v3/static/js/main.0b53b644.js.map",
+    "787.c71fb8e8.chunk.js.map": "/robofriends_v3/static/js/787.c71fb8e8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dae54194.css",
+    "static/js/main.0b53b644.js"
+  ]
+}
